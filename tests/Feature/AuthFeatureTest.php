@@ -14,8 +14,8 @@ class AuthFeatureTest extends TestCase
     {
         $client = Client::factory()->create();
 
-        $response = $this->postJson('/api/client/login', [
-            'phone' => $client->phone,
+        $response = $this->postJson('/api/auth/login', [
+            'phone' => $client->telephone,
             'password' => 'password'
         ]);
 
