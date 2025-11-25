@@ -50,8 +50,3 @@ Route::middleware('auth:sanctum')->prefix('admin')->group(function () {
 Route::get('/login', function () {
     return response()->json(['message' => 'Use POST /api/auth/login'], 405);
 })->name('login');
-
-// Redirection vers la documentation Swagger
-Route::get('/documentation', function () {
-    return redirect('/docs');
-});
