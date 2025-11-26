@@ -1,8 +1,8 @@
 import 'dart:io';
 import 'package:args/command_runner.dart';
-import '../lib/commands/auth_command.dart';
-import '../lib/commands/transaction_command.dart';
-import '../lib/commands/balance_command.dart';
+import 'package:ompay_cli/commands/auth_command.dart';
+import 'package:ompay_cli/commands/transaction_command.dart';
+import 'package:ompay_cli/commands/balance_command.dart';
 
 void main(List<String> arguments) {
   final runner = CommandRunner('ompay', 'OMPAY CLI - Système de paiement')

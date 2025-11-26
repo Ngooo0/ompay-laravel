@@ -1,7 +1,5 @@
 import 'dart:io';
 import 'package:dio/dio.dart';
-import '../models/client.dart';
-import '../models/transaction.dart';
 import '../../core/config.dart';
 
 class ApiService {
